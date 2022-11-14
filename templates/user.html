@@ -1,3 +1,8 @@
-<p>
-    <h1>Hello {{ user_name|capitalize }}</h1>
-</p>
+{% extends 'base.html' %}
+{% block content %}
+
+    <p>
+        <h1>Hello {{ user_name|title }}</h1>
+    </p>
+
+{% endblock %}
